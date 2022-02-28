@@ -12,7 +12,7 @@ const AboutPage=(props)=>{
 export default withRouter(AboutPage)
 
 
-//OR------------------
+//OR-----------------
 
 
 
