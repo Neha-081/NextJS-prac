@@ -14,4 +14,29 @@ const fullStack=(props)=>{
     </div>)
 }
 
+
+export const getStaticProps=async(context)=>{
+    console.log(context);
+    return{
+    props:{
+        id:context.params.id
+    }
+}
+}
+
+export const getStaticPaths=async()=>{
+    return{
+        paths:[
+            {
+                params:{id:"Webdev"}
+            },
+            {
+                params:{id:"Android"}
+            }
+        ],
+        fallback:false
+    }
+}
+
+
 export default withRouter(fullStack)

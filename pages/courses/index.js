@@ -1,6 +1,6 @@
 
 
-const CourseMainPagePage=(props)=>{
+const CourseMainPage=(props)=>{
     console.log(props);
     return (
     <div>
@@ -20,4 +20,4 @@ export const getStaticProps=async()=>{
     }
 }
 
-export default CourseMainPagePage
+export default CourseMainPage
